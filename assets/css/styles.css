@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Share+Tech+Mono&display=swap');
+
+*{
+  font-family: "Share Tech Mono", monospace;
+  background-color: black;
+  color:white;
+  padding: 0%;
+}
+#index{
+  text-decoration: none;
+}
+h1{
+  font-family: "Orbitron", monospace;
+  text-align: center;
+  font-weight: 900;
+  font-size: 75px;
+  font-weight: bold;
+}
+.navbar ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
+}
+.navbar a{
+  text-decoration: none;
+  padding: 14px 20px;
+  display: block;
+  text-align:center;
+  float: left;
+}
+.navbar a:hover{
+  background-color: yellow;
+  color: black;
+}
+
