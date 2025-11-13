@@ -1,38 +1,101 @@
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Share+Tech+Mono&display=swap');
+.logo, h1, h2, h3 {
+    font-family: "Orbitron", sans-serif;
+}
+body {
+    font-family: "Share Tech Mono", monospace;
+    background: #000;
+    color: #fff;
+}
 
-*{
-  font-family: "Share Tech Mono", monospace;
-  background-color: black;
-  color:white;
-  padding: 0%;
+.header {
+    width: 100%;
+    padding: 24px 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
 }
-#index{
-  text-decoration: none;
+
+.header .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-h1{
-  font-family: "Orbitron", monospace;
+
+.logo {
+    font-family: "Orbitron", sans-serif;
+    font-size: 24px;
+    letter-spacing: 10px;
+    text-shadow: 0 0 15px #fff;
+}
+
+.nav a {
+    margin-left: 32px;
+    text-decoration: none;
+    color: #c8c8c8;
+    
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+.nav a:hover {
+    color: #FF2757;
+}
+
+
+/* HERO SECTION */
+.hero {
+  height: 100vh;
+  width: 100%;
+  max-width: none;
+  background: url('/assets/images/megacity.jpg') center/cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  font-weight: 900;
-  font-size: 75px;
-  font-weight: bold;
 }
-.navbar ul{
-  list-style-type: none;
+
+/* HERO TITLE — matches Figma EXACTLY */
+.hero-title {
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 700;
+  font-size: 110px;
+  line-height: 100%;
+  letter-spacing: 10px;
+  color: #ffffff;
+  text-transform: uppercase;
   margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: black;
 }
-.navbar a{
+
+/* TAGLINE */
+.hero-tagline {
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  letter-spacing: 6px;
+  margin-top: 18px;
+  font-family: 'Share Tech Mono', monospace;
+  color: #ff2757;
+}
+
+/* BUTTON */
+.hero-button {
+  margin-top: 40px;
+  padding: 14px 36px;
+  border: 1px solid #ff2757;
+  color: #ff2757;
   text-decoration: none;
-  padding: 14px 20px;
-  display: block;
-  text-align:center;
-  float: left;
+  font-family: 'Orbitron', sans-serif;
+  letter-spacing: 4px;
+  font-size: 14px;
+  transition: 0.3s ease;
 }
-.navbar a:hover{
-  background-color: yellow;
+
+.hero-button:hover {
+  background: #ff2757;
   color: black;
 }
-
