@@ -18,7 +18,7 @@
     <header class="header">
         <div class="container">
             <h1 class="logo">KARNAGE</h1>
-            <!--Navigation Bar-->
+
             <nav class="nav">
                 <a href="#">Home</a>
                 <a href="#">Sectors</a>
@@ -28,21 +28,125 @@
     </header>
 
     <section class="hero">
+        <div class="glitch-lines">
+            <span class="glitch-line l1"></span>
+            <span class="glitch-line l2"></span>
+            <span class="glitch-line l3"></span>
+            <span class="glitch-line l4"></span>
+            <span class="glitch-line l5"></span>
+        </div>
 
-  <h1 class="hero-title">KARNAGE</h1>
+        <video class="hero-video" autoplay loop muted playsinline>
+            <source src="/assets/videos/hero.mp4" type="video/mp4">
+        </video>
 
-  <p class="hero-tagline">WHERE WAR EVOLVES</p>
+        <div class="hero-overlay-dark"></div>
+        <div class="hero-overlay-full"></div>
 
-  <a href="#" class="hero-button">ENTER THE ARENA</a>
+        <button class="hero-audio-btn" onclick="toggleHeroAudio()">Unmute</button>
 
-</section>
+        <h1 class="hero-title">KARNAGE</h1>
+        <p class="hero-tagline">WHERE WAR EVOLVES</p>
+        <a href="#" class="hero-button">ENTER THE ARENA</a>
+    </section>
 
-</main>
+    <section class="section-lore">
+        <div class="lore-glow"></div>
 
-    <!--FOOTER-->
+        <h2 class="lore-title">THE WORLD OF KARNAGE</h2>
+
+        <div class="lore-divider"></div>
+
+        <p class="lore-text">
+            The city never sleeps. It watches.<br>
+            Neon skies choke the horizon while syndicates,<br>
+            mercenaries, and rogue AIs wage silent wars<br>
+            for data, power, and territory.<br>
+            Only the adaptable survive.
+        </p>
+
+        <p class="lore-welcome">Welcome to Karnage.</p>
+    </section>
+
+    <section class="section-highlights">
+
+        <div class="highlights-glow"></div>
+
+        <h2 class="highlights-title">Karnage Unfolds</h2>
+
+        <p class="highlights-subtext">
+            The world fractures in silence before it burns in noise.
+        </p>
+
+        <div class="cards-row">
+
+            <div class="card">
+                <p class="card-sector">// SECTOR 01</p>
+                <h3 class="card-heading">NEON<br>MEGACITY</h3>
+                <p class="card-text">
+                    Vertical spires drown in smoke and static.<br>
+                    Power belongs to whoever can see in the dark.
+                </p>
+            </div>
+
+            <div class="card">
+                <p class="card-sector">// SECTOR 02</p>
+                <h3 class="card-heading">SKY<br>BARRACKS</h3>
+                <p class="card-text">
+                    Where the city ends and the war begins.<br>
+                    Concrete rooftops turned landing zones.<br>
+                    Drones drift like vultures in artificial dawn.<br>
+                    Only the ruthless hold the high ground.
+                </p>
+            </div>
+
+            <div class="card">
+                <p class="card-sector">// SECTOR 03</p>
+                <h3 class="card-heading">LOWER<br>CIRCUITS</h3>
+                <p class="card-text">
+                    Where neon lights flicker and machines hiss.<br>
+                    Markets run without sun or law.<br>
+                    Data thieves, smugglers, and ghosts of the network<br>
+                    trade truths nobody above is supposed to know.<br><br>
+                    Power here is silent. And always watching.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="section-heroes">
+        <h2 class="heroes-title">KARNAGE IS NOT<br>A STORY OF HEROES.</h2>
+
+        <p class="heroes-text">
+            It is escalation.<br>
+            Territory claimed and reclaimed.<br>
+            Systems devouring systems, silence replacing identity.<br><br>
+            The city did not fall in a single night.<br>
+            It eroded, piece by piece,<br>
+            sector by sector.
+        </p>
+
+        <div class="heroes-divider"></div>
+
+        <p class="heroes-bottom">Who controls the signal, controls the war.</p>
+    </section>
+
     <footer class="footer">
         <p>© 2025 Karnage. All rights reserved.</p>
     </footer>
 
+    <script>
+        const heroVideo = document.querySelector('.hero-video');
+        const audioButton = document.querySelector('.hero-audio-btn');
+
+        function toggleHeroAudio() {
+            heroVideo.muted = !heroVideo.muted;
+            audioButton.textContent = heroVideo.muted ? "Unmute" : "Mute";
+        }
+    </script>
+
 </body>
+
 </html>
