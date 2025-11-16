@@ -1,6 +1,14 @@
 .logo, h1, h2, h3 {
     font-family: "Orbitron", sans-serif;
 }
+
+.hero-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 body {
     font-family: "Share Tech Mono", monospace;
     background: #000;
@@ -59,6 +67,7 @@ footer {
 
 .hero-video {
     position: absolute;
+    filter: blur(8px);
     inset: 0;
     width: 100%;
     height: 100%;
