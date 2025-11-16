@@ -7,6 +7,16 @@ body {
     color: #fff;
 }
 
+footer {
+    width: 100%;
+    padding: 24px 0;
+    text-align: center;
+    font-size: 14px;
+    color: #00E4FF50;
+    border-top: 1px solid #00E4FF50;
+    margin-top: 60px;
+}
+
 .header {
     width: 100%;
     padding: 24px 0;
@@ -42,7 +52,7 @@ body {
 }
 
 .nav a:hover {
-    color: #FF2757;
+    color: #00E4FF;
 }
 
 
@@ -88,14 +98,14 @@ body {
   font-size: 18px;
   letter-spacing: 6px;
   margin-top: 18px;
-  color: #FF2757FF;
+  color: #00E4FFFF;
 }
 
 .hero-button {
   margin-top: 40px;
   padding: 14px 36px;
-  border: 1px solid #ff2757;
-  color: #ff2757;
+  border: 1px solid #00E4FF;
+  color: #00E4FF;
   text-decoration: none;
   font-family: 'Share Tech Mono', monospace;
   letter-spacing: 4px;
@@ -104,7 +114,7 @@ body {
 }
 
 .hero-button:hover {
-  background: #ff2757;
+  background: #00E4FF;
   color: black;
 }
 
@@ -132,10 +142,13 @@ body {
   z-index: 5;
 }
 
+/* Section - 2 */
+
 .section-lore {
     position: relative;
     width: 100%;
-    height: 600px;
+    height: 900px;
+    gap:60px;
     background: #000;
     display: flex;
     flex-direction: column;
@@ -147,15 +160,15 @@ body {
 
 .lore-glow {
     position: absolute;
-    top: 50%;
+    top: 32%;
     left: 50%;
     width: 1468px;
     height: 380px;
     transform: translate(-50%, -50%);
     background: radial-gradient(
         ellipse at center,
-        #FF275712 0%,
-        #000000FF 100%
+        #00E4FF95 0%,
+        #000000 40%
     );
     filter: blur(80px);
     z-index: 0;
@@ -175,7 +188,7 @@ body {
     margin-top: 10px;
     width: 72px;
     height: 2px;
-    background: #FF2757B3; 
+    background: #00E4FFB3; 
     z-index: 2;
 }
 
@@ -223,7 +236,7 @@ body {
     transform: translate(-50%, -50%);
     background: radial-gradient(
         ellipse at center,
-        #FF275790 0%,
+        #00E4FF90 0%,
         #000000 100%
     );
     filter: blur(120px);
@@ -263,15 +276,15 @@ body {
     height: fill; 
     padding: 12px 25px;
     gap:12px;
-    border: 1px solid #FF275745;
+    border: 1px solid #00E4FF45;
     background: #00000008;
-    box-shadow:0px 0px 120px #FF275718 inset;
+    box-shadow:0px 0px 120px #00E4FF18 inset;
     border-radius: 8px;
     backdrop-filter: blur(10px);
 }
 
 .card-sector {
-    color: #ff2757;
+    color: #00E4FF;
     font-family: 'Share Tech Mono', monospace;
     letter-spacing: 4px;
     font-size: 12px;
@@ -297,7 +310,7 @@ body {
     color: #C8C8C870;
 }
 
-
+/* section -4  */
 
 .section-heroes {
   position: relative;
@@ -323,13 +336,11 @@ body {
 
 .heroes-text {
   font-family: 'Share Tech Mono', monospace;
-  font-size: 22px;
-  line-height: 165%;
+  font-size: 20px;
+  line-height: 160%;
   letter-spacing: 1px;
-  font-weight: 400;
-  max-width: 650px;
   margin: 0 auto 50px auto;
-  color: #c8c8c882;
+  color: #c8c8c880;
   z-index: 2;
   position: relative;
 }
@@ -337,7 +348,7 @@ body {
 .heroes-divider {
   width: 120px;
   height: 0;
-  border-bottom: 2px solid #ff275760;
+  border-bottom: 2px solid #00E4FF60;
   margin: 0 auto 40px auto;
   z-index: 2;
 }
@@ -346,10 +357,12 @@ body {
   font-family: 'Share Tech Mono', monospace;
   font-size: 20px;
   letter-spacing: 3px;
-  color: #ff275775;
+  color: #00E4FF75;
   z-index: 2;
   position: relative;
 }
+
+/* Hero audio button */
 
 .hero-audio-btn {
   position: absolute;
@@ -357,8 +370,8 @@ body {
   right: 40px;
   z-index: 8;
   padding: 14px 36px;
-  border: 1px solid #ff2757;
-  color: #ff2757;
+  border: 1px solid #00E4FF;
+  color: #00E4FF;
   background: transparent;
   font-family: 'Share Tech Mono', monospace;
   letter-spacing: 4px;
@@ -367,6 +380,6 @@ body {
 }
 
 .hero-audio-btn:hover {
-  background: #ff2757;
+  background: #00E4FF;
   color: #000;
 }
