@@ -292,9 +292,6 @@ footer {
     backdrop-filter: blur(10px);
     scrollbar-width: none;
 }
-.card::-webkit-scrollbar {
-    display: none;
-}
 
 .card-sector {
     color: #00E4FF;
