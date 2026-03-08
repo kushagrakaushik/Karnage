@@ -123,6 +123,7 @@ footer {
 
 .hero-button:hover {
   background: #00E4FF;
+  box-shadow: #00E4FF 0px 0px 20px;
   color: black;
 }
 
@@ -393,9 +394,11 @@ footer {
   letter-spacing: 4px;
   font-size: 14px;
   cursor: pointer;
+  transition: ease 0.3s;
 }
 
 .hero-audio-btn:hover {
   background: #00E4FF;
+  box-shadow: #00E4FF 0px 0px 20px;
   color: #000;
 }
